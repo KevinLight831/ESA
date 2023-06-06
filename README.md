@@ -1,7 +1,7 @@
 # ESA: External Space Attention Aggregation for Image-Text Retrieval
 <img src="docs/img/pytorch-logo-dark.png" width="10%"> [![GitHub](https://img.shields.io/badge/license-MIT-green)](https://github.com/KevinLight831/ESA/blob/main/LICENSE)
 
-The pytorch code of the TCSVT 2023 paper [“ESA: External Space Attention Aggregation for Image-Text Retrieval”](https://ieeexplore.ieee.org/document/10061465) (Finished in 2021)/
+The pytorch code of the TCSVT 2023 paper [“ESA: External Space Attention Aggregation for Image-Text Retrieval”](https://ieeexplore.ieee.org/document/10061465) (Finished in 2021)
 
 We referred to the implementations of [VSE++](https://github.com/fartashf/vsepp), [SCAN](https://github.com/kuanghuei/SCAN) and [vse_infy](https://github.com/woodfrog/vse_infty) to build up our codebase. 
 
