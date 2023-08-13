@@ -1,7 +1,7 @@
 # ESA: External Space Attention Aggregation for Image-Text Retrieval
 <img src="docs/img/pytorch-logo-dark.png" width="10%"> [![GitHub](https://img.shields.io/badge/license-MIT-green)](https://github.com/KevinLight831/ESA/blob/main/LICENSE)
 
-The pytorch code of the TCSVT 2023 paper [“ESA: External Space Attention Aggregation for Image-Text Retrieval”](https://ieeexplore.ieee.org/document/10061465) (Finished in 2021)
+The PyTorch code of the TCSVT 2023 paper [“ESA: External Space Attention Aggregation for Image-Text Retrieval”](https://ieeexplore.ieee.org/document/10061465) (Finished in 2021)
 
 We referred to the implementations of [VSE++](https://github.com/fartashf/vsepp), [SCAN](https://github.com/kuanghuei/SCAN) and [vse_infy](https://github.com/woodfrog/vse_infty) to build up our codebase. 
 
@@ -24,7 +24,7 @@ Meanwhile, compared with the vision-language pre-training embedding-base method 
 <p align="center"><img src="docs/img/COCO.png" alt="COCO" width="800"/></p>
 
 ## :pushpin: Pretrained Model Weight 
-The following tables show partial results of the ensemble model ESA* and the download link of pretrained weight on Flickr30K and COCO datasets. The folder "ESA_BIGRU" provides the code of using BIGRUas the textual backbone. Please check out to the folder "ESA_BERT" for the code of using BERT-base as the textual backbone. 
+The following tables show partial results of the ensemble model ESA* and the download link of pretrained weights on Flickr30K and COCO datasets. The folder "ESA_BIGRU" provides the code of using BIGRU as the textual backbone. Please check out the folder "ESA_BERT" for the code of using BERT-base as the textual backbone. 
 
 | dataset                     | Visual Backbone | Text Backbone | IR1            | IR5            | TR1            | TR5            | Rsum             | Link     |
 | --------------------------- | :-------------: | :-----------: | -------------- | -------------- | -------------- | -------------- | ---------------- | -------- |
@@ -46,7 +46,7 @@ conda env create -f ESA.yaml
 ## :file_folder: Dataset
 
 
-All dataset used in the experiments are organized in the following manner:
+All datasets used in the experiments are organized in the following manner:
 
 ```
 data
@@ -73,7 +73,7 @@ data
 └── vocab  # vocab files provided by SCAN (only used when the text backbone is BiGRU)
 ```
 
-The download links for original COCO/F30K images, precomputed BUTD features, and corresponding vocabularies are from the offical repo of [SCAN](https://github.com/kuanghuei/SCAN#download-data). The ```precomp``` folders contain pre-computed BUTD region features, ```data/coco/images``` contains raw MS-COCO images, and ```data/f30k/flickr30k-images``` contains raw Flickr30K images. 
+The download links for original COCO/F30K images, precomputed BUTD features, and corresponding vocabularies are from the official repo of [SCAN](https://github.com/kuanghuei/SCAN#download-data). The ```precomp``` folders contain pre-computed BUTD region features, ```data/coco/images``` contains raw MS-COCO images, and ```data/f30k/flickr30k-images``` contains raw Flickr30K images. 
 Because the download link for the pre-computed features in [SCAN]((https://github.com/kuanghuei/SCAN)) is seemingly taken down. The [link](https://www.dropbox.com/sh/qp3fw9hqegpm914/AAC3D3kqkh5i4cgZOfVmlWCDa?dl=0) provided by the author of [vse_infty](https://github.com/woodfrog/vse_infty) contains a copy of these files. 
 
 
@@ -88,7 +88,7 @@ Training on the Flicker30K or COCO dataset:
   ```
   sh train_GRU_f30k.sh
   ```
-3. Evaluation: Run the following commands after modifing the default data and model path to yourself path.
+3. Evaluation: Run the following commands after modifying the default data and model path to yourself path.
   ```
   cd ../
   python eval_ensemble.py
@@ -106,9 +106,11 @@ If this codebase is useful to you, please cite our work:
   publisher={IEEE}
 }
 ```
-If you have any question, please feel free contact me: hongguang@bjtu.edu.cn or kevinlight831@gmail.com
 
-### Reference
+## :panda_face: Contacts
+If you have any questions, please feel free to contact me: kevinlight831@gmail.com or hongguang@bjtu.edu.cn.
+
+## :books: Reference
 1. Chen, Jiacheng, et al. "[Learning the best pooling strategy for visual semantic embedding.](https://github.com/woodfrog/vse_infty)" Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2021.
 2. Faghri, Fartash, et al. "[Vse++: Improving visual-semantic embeddings with hard negatives.](https://github.com/fartashf/vsepp)" arXiv preprint arXiv:1707.05612 (2017).
 3. Lee, Kuang-Huei, et al. "[Stacked cross attention for image-text matching.](https://github.com/kuanghuei/SCAN)" Proceedings of the European conference on computer vision (ECCV). 2018.
