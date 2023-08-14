@@ -5,7 +5,7 @@ The PyTorch code of the TCSVT 2023 paper [“ESA: External Space Attention Aggre
 
 We referred to the implementations of [VSE++](https://github.com/fartashf/vsepp), [SCAN](https://github.com/kuanghuei/SCAN) and [vse_infy](https://github.com/woodfrog/vse_infty) to build up our codebase. 
 
-## :open_book: Introduce
+## :open_book: Introduction
 Due to the large gap between vision and language modalities, effective and efficient image-text retrieval is still an unsolved problem. 
 Recent progress devotes to unilaterally pursuing retrieval accuracy by either entangled image-text interaction or large-scale vision-language pre-training in a brute force way. However, the former often leads to unacceptable retrieval time explosion when deploying on large-scale databases. The latter heavily relies on the extra corpus to learn better alignment in the feature space while obscuring the contribution of the network architecture. 
 In this work, we aim to investigate a trade-off to balance effectiveness and efficiency. To this end, on the premise of efficient retrieval, we propose the plug-and-play External Space attention Aggregation (ESA) module to enable element-wise fusion of modal features under spatial dimensional attention. Based on flexible spatial awareness, we further propose the Self-Expanding triplet Loss (SEL) to expand the representation space of samples and optimize the alignment of embedding space.
