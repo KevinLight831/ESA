@@ -1,5 +1,6 @@
 # ESA: External Space Attention Aggregation for Image-Text Retrieval
 <img src="docs/img/pytorch-logo-dark.png" width="10%"> [![GitHub](https://img.shields.io/badge/license-MIT-green)](https://github.com/KevinLight831/ESA/blob/main/LICENSE)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=KevinLight831.ESA&left_color=green&right_color=red)
 
 The PyTorch code of the TCSVT 2023 paper [“ESA: External Space Attention Aggregation for Image-Text Retrieval”](https://ieeexplore.ieee.org/document/10061465) (Finished in 2021)
 
@@ -78,7 +79,7 @@ Because the download link for the pre-computed features in [SCAN]((https://githu
 
 
 
-## :mag: Train and Evaluation
+## :mag: Training and Evaluation
 Training on the Flicker30K or COCO dataset:
 1. Switch to the shell folder in the corresponding path. For example:
   ```
