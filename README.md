@@ -109,7 +109,7 @@ If this codebase is useful to you, please cite our work:
 ```
 
 ## :panda_face: Contacts
-If you have any questions, please feel free to contact me: kevinlight831@gmail.com or hongguang@bjtu.edu.cn.
+If you have any questions, please feel free to contact me: zhuhongguang1103@gmail.com or hongguang@bjtu.edu.cn.
 
 ## :books: Reference
 1. Chen, Jiacheng, et al. "[Learning the best pooling strategy for visual semantic embedding.](https://github.com/woodfrog/vse_infty)" Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2021.
