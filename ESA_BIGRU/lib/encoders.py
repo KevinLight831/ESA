@@ -76,8 +76,6 @@ class EncoderImageAggr(nn.Module):
         if precomp_enc_type == 'basic':
             self.mlp = MLP(img_dim, embed_size // 2, embed_size, 2)
         self.linear1 = nn.Linear(embed_size, embed_size)
-        self.dropout1 = nn.Dropout(0.1)
-        self.dropout2 = nn.Dropout(0.1)
         self.init_weights()
 
     def init_weights(self):
