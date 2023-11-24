@@ -83,8 +83,6 @@ class EncoderImageAggr(nn.Module):
         if precomp_enc_type == 'basic':
             self.mlp = MLP(img_dim, embed_size // 2, embed_size, 2)
         self.linear1 = nn.Linear(embed_size, embed_size)
-        self.griddrop1 = nn.Dropout(0.2)
-        self.griddrop2 = nn.Dropout(0.2)
         self.init_weights()
 
 
