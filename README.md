@@ -97,7 +97,7 @@ Training on the Flicker30K or COCO dataset:
 
 
 ## :pencil: Citation
-If this codebase is useful to you, please cite our work:
+If this codebase is useful to you, please consider citing:
 ```
 @article{zhu2023esa,
   title={ESA: External Space Attention Aggregation for Image-Text Retrieval},
